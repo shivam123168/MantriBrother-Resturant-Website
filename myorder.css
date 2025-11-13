@@ -1,0 +1,594 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+body {
+    background: #000000;
+    background-image: url(images/myorder_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+
+#contaner {
+    width: 100%;
+    /* height: 136vh; */
+    /* background-image: url(images/shivambackground.png); */
+    background-size: cover;
+    background-position: center;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(2px);
+    align-items: center;
+    height: 50px;
+    background-color: #00000078;
+    border-radius: 0px 0px 20px 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    margin: 20px
+}
+
+.logo span {
+    color: #ff045c;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+
+
+
+}
+
+li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: 0.5s;
+}
+
+li a:hover {
+    color: #ff004f;
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+li a:hover::after {
+    width: 100%;
+
+}
+
+.line {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+
+}
+
+.line p {
+    font-size: 20px;
+}
+
+h1 span {
+    color: #ff045c;
+    font-size: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.line h1 span:hover {
+    -webkit-text-stroke: 2px #ff004f;
+    color: transparent;
+}
+
+
+.contaner {
+    margin: 30px 0px;
+
+}
+
+.contaner-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin: 0px 20px;
+}
+
+.contaner-box div {
+    background: #262626;
+    padding: 10px;
+
+    font-weight: 600;
+    border-radius: 18px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.contaner-box div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    color: rgb(0, 255, 247);
+}
+
+.contaner-box div span {
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #00ddff;
+}
+
+.contaner-box div span:hover {
+    color: aqua;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* ---------------------contact------------------- */
+
+.contact-list div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list-extra div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.contact-list-extra a {
+    margin: 0px 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.contact-list-extra a:hover {
+
+    color: #ffea00;
+
+}
+
+.contact-list i {
+
+    color: #fff;
+    font-size: 26px;
+
+
+}
+
+.contact-list-extra a span {
+    color: #fff;
+
+}
+
+
+.contact-list-extra a span:hover {
+    color: #ffea00;
+}
+
+.contact-list #purple:hover {
+    color: #ff045c;
+}
+
+.contact-list #blue:hover {
+    color: blue;
+}
+
+.contact-list #green:hover {
+    color: rgb(0, 255, 0);
+}
+
+.contact-list #lblue:hover {
+    color: rgb(0, 179, 255);
+}
+
+.reviewbtn {
+
+    text-align: right;
+
+
+}
+
+.reviewbtn a {
+    color: #0a0a0a;
+    margin: 0px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #ffea00;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 4px 17px;
+    transition: 0.5s;
+}
+
+.reviewbtn a:hover {
+    background-color: #ff004f;
+
+}
+
+
+
+/* ----------------responsive desing---------------- */
+
+
+.toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+
+}
+
+.dropdown_manue {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown_manue.open {
+    height: 263px;
+}
+
+.dropdown_manue li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .dropdown_manue .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
+/* -----------------------------contact------------------------------ */
+.contact-list div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.text {
+    text-align: center;
+    color: #ff004f;
+}
+
+.contact-list-extra div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.contact-list-extra a {
+    margin: 0px 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.contact-list-extra a:hover {
+
+    color: #ffea00;
+
+}
+
+.contact-list i {
+
+    color: #fff;
+    font-size: 26px;
+
+
+}
+
+.contact-list-extra a span {
+    color: #fff;
+
+}
+
+
+.contact-list-extra a span:hover {
+    color: #ffea00;
+}
+
+.contact-list #purple:hover {
+    color: #ff045c;
+}
+
+.contact-list #blue:hover {
+    color: blue;
+}
+
+.contact-list #green:hover {
+    color: rgb(0, 255, 0);
+}
+
+.contact-list #lblue:hover {
+    color: rgb(0, 179, 255);
+}
+
+.foodcontaner {
+    margin: 10px 20px;
+}
+
+/* Add some basic styles for layout */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+} */
+
+.order {
+    margin: 40px 0px;
+}
+
+.order-container {
+    display: block;
+    field-sizing: content;
+    max-width: 600px;
+    color: aliceblue;
+    margin: 75px 0px;
+
+}
+
+.order-container h2 {
+    text-align: center;
+}
+
+.order-item {
+    margin: 20px 10px;
+    background-color: #1a1a1a;
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 0px white;
+
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-total {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#orderItemsContainer {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px 0.5px #000000;
+    background-color: #000000bf;
+    height: 500px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-y: scroll;
+    margin: 10px;
+    padding: 15px;
+    scrollbar-width: none;
+    border: 4px solid #2d2d2d;
+    border-radius: 20px;
+}
+
+#orderItemsContainer::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
+
+#spilt-contaner {
+    color: aliceblue;
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-contaner {
+    background-color: #000000bf;
+    margin: 10px;
+    padding: 15px;
+    height: 500px;
+    box-shadow: 0px 0px 8px 0.5px #000000;
+    /* margin-right: 20px; */
+    /* margin-top: 95px; */
+    display: flex;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    justify-content: center;
+    border-radius: 20px;
+    border: 4px solid #2d2d2d;
+}
+
+.second-contaner h2 {
+    text-align: center;
+}
+
+.first-contaner {
+    width: 100%;
+    text-align: center;
+}
+
+
+.first-contaner {
+    width: 100%;
+    text-align: center;
+}
+
+#orderItemsContainer p {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.menu-item {
+    width: 200px;
+    height: 200px;
+    margin: 35px;
+}
+
+.formyorderonly {
+    width: 200px;
+    height: 200px;
+}
+
+.formyorderonly img {
+    width: 200px;
+    height: 150px;
+}
+
+
+.price {
+    margin-top: 10px;
+}
+
+.price button {
+    font-size: 11px;
+}
+
+.shop-myorder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-myorder div img {
+    border-radius: 20px;
+}
+
+
+@media(max-width:992px) {
+
+    #spilt-contaner {
+        color: aliceblue;
+        display: flex;
+        margin: 20px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbaar .navi {
+        display: none;
+    }
+
+    .navbaar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_manue {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .dropdown_manue {
+        left: 2rem;
+        width: unset;
+    }
+
+}
+
+@media(max-width:300px) {
+    .shop-list div img {
+        height: 14%;
+        width: 100%;
+        border-radius: 20px;
+    }
+}

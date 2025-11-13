@@ -1,0 +1,703 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+body {
+    background: #080808;
+    background-image: url(images/menu-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#contaner {
+    width: 100%;
+    /* height: 136vh; */
+    /* background-image: url(images/shivambackground.png); */
+    background-size: cover;
+    background-position: center;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    margin: 20px
+}
+
+.logo span {
+    color: #ff045c;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+
+
+
+}
+
+li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: 0.5s;
+}
+
+li a:hover {
+    color: #ff004f;
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+li a:hover::after {
+    width: 100%;
+
+}
+
+.line {
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+
+}
+
+.line p {
+    font-size: 20px;
+}
+
+h1 span {
+    color: #ff045c;
+    font-size: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.line h1 span:hover {
+    -webkit-text-stroke: 2px #ff004f;
+    color: transparent;
+}
+
+
+.contaner {
+    margin: 30px 0px;
+
+}
+
+.contaner-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin: 0px 20px;
+}
+
+.contaner-box div {
+    background: #262626;
+    padding: 10px;
+
+    font-weight: 600;
+    border-radius: 18px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.contaner-box div:hover {
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    color: rgb(0, 255, 247);
+}
+
+.contaner-box div span {
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #00ddff;
+}
+
+.contaner-box div span:hover {
+    color: aqua;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* ---------------------contact------------------- */
+
+.contact-list div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list-extra div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.contact-list-extra a {
+    margin: 0px 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.contact-list-extra a:hover {
+
+    color: #ffea00;
+
+}
+
+.contact-list i {
+
+    color: #fff;
+    font-size: 26px;
+
+
+}
+
+.contact-list-extra a span {
+    color: #fff;
+
+}
+
+
+.contact-list-extra a span:hover {
+    color: #ffea00;
+}
+
+.contact-list #purple:hover {
+    color: #ff045c;
+}
+
+.contact-list #blue:hover {
+    color: blue;
+}
+
+.contact-list #green:hover {
+    color: rgb(0, 255, 0);
+}
+
+.contact-list #lblue:hover {
+    color: rgb(0, 179, 255);
+}
+
+.reviewbtn {
+
+    text-align: right;
+
+
+}
+
+.reviewbtn a {
+    color: #0a0a0a;
+    margin: 0px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #ffea00;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 4px 17px;
+    transition: 0.5s;
+}
+
+.reviewbtn a:hover {
+    background-color: #ff004f;
+
+}
+
+
+
+/* ----------------responsive desing---------------- */
+
+
+.toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+
+}
+
+.dropdown_manue {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown_manue.open {
+    height: 263px;
+}
+
+.dropdown_manue li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .dropdown_manue .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+@media(max-width:992px) {
+
+
+
+    .navbaar .navi {
+        display: none;
+    }
+
+    .navbaar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_manue {
+        display: block;
+    }
+}
+
+@media(max-width:576px) {
+    .dropdown_manue {
+        left: 2rem;
+        width: unset;
+    }
+
+}
+
+@media(max-width:300px) {
+    .shop-list div img {
+        height: 14%;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+/* ----------cart item----------------- */
+
+.cart-import {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+
+div img {
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.wrap {
+    width: 300px;
+    height: auto;
+}
+
+.wrap p {
+    text-wrap: wrap;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#quanty {
+    width: 50px;
+    height: auto;
+
+}
+
+.delete {
+    color: #0a0a0a;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    transition: 0.5S;
+}
+
+.delete:hover {
+    background-color: #ff004f;
+    transform: translateY(-2PX);
+}
+
+/* .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff004f;
+    margin: 20px 0px;
+} */
+
+.invoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: end;
+    color: aliceblue;
+}
+
+.total_amount {
+    width: fit-content;
+    font-size: large;
+    margin: 0px 20px;
+    font-weight: 600;
+    font-style: initial;
+}
+
+.total_amount p {
+    background-color: #414040a1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 0.5px #96ef21
+}
+
+
+/* -----------------------------contact------------------------------ */
+.contact-list div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list-extra div {
+
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+.contact-list a {
+    margin: 0px 15px;
+    text-decoration: none;
+}
+
+.contact-list-extra a {
+    margin: 0px 15px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.contact-list-extra a:hover {
+
+    color: #ffea00;
+
+}
+
+.contact-list i {
+
+    color: #fff;
+    font-size: 26px;
+
+
+}
+
+.contact-list-extra a span {
+    color: #fff;
+
+}
+
+
+.contact-list-extra a span:hover {
+    color: #ffea00;
+}
+
+.contact-list #purple:hover {
+    color: #ff045c;
+}
+
+.contact-list #blue:hover {
+    color: blue;
+}
+
+.contact-list #green:hover {
+    color: rgb(0, 255, 0);
+}
+
+.contact-list #lblue:hover {
+    color: rgb(0, 179, 255);
+}
+
+.foodcontaner {
+    margin: 10px 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.details p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #96ef21;
+
+}
+
+.details button {
+    color: antiquewhite;
+    height: 20px;
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    box-shadow: 0px 0px 5px 0.5px white;
+    background-color: #ff5516;
+    transition: 0.5s;
+
+}
+
+.details button:hover {
+    transform: translateY(-5px);
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quantity input {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.total-amount {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bill-genrate {
+    display: flex;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lower-total {
+    border: none;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 6px 0px white;
+    background-color: antiquewhite;
+}
+
+.item-detail td {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.oreder_bill_btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+
+}
+
+.oreder_bill_btn button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin: auto 40px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 13px;
+    box-shadow: 0px 0px 5px 0.5px white;
+    background-color: #ff5516;
+}
+
+/* ----------------------------------code for bill styling---------------------------------- */
+/* Style for the table */
+.table-with-lines {
+    border-radius: 30px;
+    border-radius: 30px;
+    color: #000000;
+}
+
+/* Style for table headers */
+.table-with-lines th {
+    background-color: #f4f4f4;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    /* Bottom border for headers */
+}
+
+/* Style for table cells */
+.table-with-lines td {
+    padding: 8px;
+    background-color: antiquewhite;
+    border-right: 1px solid #000000;
+    /* Right border for vertical lines */
+}
+
+/* Remove the last right border for the last column */
+.table-with-lines td:last-child {
+    border-right: none;
+    background-color: #fffdb8;
+}
+
+/* Optional: Add styling for table rows */
+.table-with-lines tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Alternating row colors */
+}
+
+/* --------------------payment-form----------------------------- */
+.payment-form {
+    box-shadow: 0px 0px 9px 1px white;
+    border: none;
+    border-radius: 20px;
+    background-color: #2a2929;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.payment-form h3 {
+    margin: 20px auto;
+}
+
+#payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+#paymentForm label {
+    font-size: larger;
+}
+
+#paymentForm button {
+    box-shadow: 0px 0px 4px 1px white;
+    background-color: #4cff41;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 0px;
+    font-weight: bold;
+    font-size: 13px;
+    width: 50%;
+    margin: 20px 25%;
+    align-content: center;
+    text-align: center;
+}
+
+#upiDetails {
+    margin: 10px;
+}
+
+.cartshow {
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.empty-cart {
+    box-shadow: 0px 0px 5px 0px #575656;
+    background-color: #000000cf;
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    padding: 100px 0px;
+    display: flex;
+    border: 3px solid #575656;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}

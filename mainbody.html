@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mantri brother</title>
+    <script src="https://kit.fontawesome.com/cc3d9312ad.js" crossorigin="anonymous"></script>
+    <!-- Google Platform Library -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- ----------------google font------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- -----------------------acount--------------------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- --------------------------smartphone----------- -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- --------------location--------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- --------------------timing----------------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- -----------------------address------------------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- -------------------------contact-------------------------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+    <!-- --------------------boxicon-------------------- -->
+    <!-- -------------------------------socialmedia--------------------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="mainbody.css">
+    <style>
+        #account {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #account span {
+            font-size: xx-large;
+
+            font-weight: bolder;
+
+
+
+        }
+
+        /* Styling for the review form */
+        .review-form {
+            border: none;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #262626;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .review-form h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .review-form input,
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .review-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .review-form button:hover {
+            background-color: #b37100;
+        }
+
+
+       
+</style>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+
+    <!-- -------------navbar-------------- -->
+    <div id="contaner" class="navbaar">
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    <h2><span>M</span>antri<span>B</span>rother</h2>
+                </div>
+                <div class="navi1">
+                    <li><a href="account.html" id="account"><span class="material-symbols-outlined">
+                                account_circle
+                            </span></a></li>
+                </div>
+                <div class="navi">
+
+                    <ul>
+
+                        <li><a href="mainbody.html">Home</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="myorder.html">My order</a></li>
+                        <li><a href="manu.html">Menu</a></li>
+                        <li><a href="#contactus">Contact</a></li>
+                        <li><a href="#aboutus">About us</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div class="line">
+                <h1 class="welcome"><span>Welcome</span>
+                <!-- <span id="username">🤗shivam🤗</span></h1> -->
+                <p>Enjoy the Food</p>
+            </div>
+
+        </div>
+        <div class="dropdown_manue">
+
+            <li><a href="mainbody.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="myorder.html">My order</a></li>
+            <li><a href="manu.html">Menu</a></li>
+            <li><a href="#contactus">Contact</a></li>
+            <li><a href="#aboutus">About us</a></li>
+
+        </div>
+
+
+    </div>
+
+    <!-- Overlay Login & Sign-up Form -->
+<div id="overlay" class="overlay">
+    <!-- Login Form -->
+    <div class="form-container" id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button id="login-btn">Login</button>
+        <p>Don't have an account? <span class="switch-btn" id="show-signup">Sign up</span></p>
+    </div>
+
+    <!-- Sign-up Form (Initially Hidden) -->
+    <div class="form-container" id="signup-form" style="display:none;">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <button id="signup-btn">Sign Up</button>
+        <p>Already have an account? <span class="switch-btn" id="show-login">Login</span></p>
+    </div>
+</div>
+
+    <!-- --------------------timing body--------------- -->
+
+    <div class="contaner">
+        <div class="contaner-box">
+            <div>
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+                <div class="layer">
+                    <h2>Time</h2>
+                    <p>8 Am to 9 Pm</p>
+                </div>
+
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined">
+                    pin_drop
+                </span>
+                <div class="layer">
+                    <h2>Address</h2>
+                    <p>near motha ram mandir road</p>
+                </div>
+
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined">
+                    connect_without_contact
+                </span>
+                <div class="layer">
+                    <h2>Contact No</h2>
+                    <p>+91 90xxxxxxxx</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- ---------------------about us-------------------- -->
+
+    <div class="about" id="aboutus">
+        <div class="about-text">
+            <h2>Hi we are <span>MantriBrother</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat architecto sit odit alias ut beatae,
+                quaerat voluptatem quisquam laboriosam repellendus!</p>
+
+        </div>
+        <div class="about-img">
+            <img src="images/backpizza.jpg">
+        </div>
+    </div>
+
+    <!-- -----------------------our shop---------------------------- -->
+    <div class="text">
+        <h2>Explore Food</h2>
+    </div>
+
+    <!-- ----------------------------pizza--------------------------- -->
+    <div class="shop">
+
+        <div class="middle-text">
+            <h2>Menu</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias.</p>
+        </div>
+        <div class="shop-list">
+
+            <div>
+                <img src="images/pizza.png">
+                <h2>Pizza</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+                    <a href="manu.html#pizza">Explore</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/burger.png">
+                <h2>Burger</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+
+                    <a href="manu.html#Burger">Explore</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/frenchfries.png">
+                <h2>Fries</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+
+                    <a href="manu.html#Fries">Explore</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/sandwhich.png">
+                <h2>Sandwich</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+
+                    <a href="manu.html#Sandwich">Explore</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/maggi.png">
+                <h2>Maggi</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+
+                    <a href="manu.html#Maggi">Explore</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/shake.png">
+                <h2>Shake</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="explore">
+
+                    <a href="manu.html#Shake">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- ------------------------coffie---------------------------- -->
+    <div class="shop" id="shop">
+        <div class="middle-text">
+            <h2>Coffee</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias.</p>
+        </div>
+        <div class="shop-list" id="menuContainer8">
+        </div>
+    </div>
+    </div>
+
+    <!-- --------------------------review----------------- -->
+
+    <!-- Customer Review Section -->
+    <div class="text">
+        <h2>Customer Review</h2>
+    </div>
+
+    <!-- Review Button -->
+    <div class="reviewbtn">
+        <a href="#" id="openReviewForm">Review</a>
+    </div>
+
+    <!-- Hidden Review Form -->
+    <div class="review-form" id="reviewFormContainer" style="display: none;">
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+            <input type="text" id="reviewerName" placeholder="Your Name" required>
+            <textarea id="reviewText" placeholder="Your Review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="contaner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="reviewcontaner-box">
+                <div class="carousel-inner mid">
+                    <!-- Existing Carousel Items -->
+                    <div class="carousel-item active">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------footer----------------------- -->
+
+    <!-- -------------------------contact us------------------- -->
+
+    <div class="contact" id="contactus">
+        <div class="text">
+            <h2>Contact us</h2>
+        </div>
+
+        <div class="contact-list">
+            <div>
+                <a href="#"><i class='bx bxl-instagram-alt' id="purple"></i></a>
+                <a href="#"><i class='bx bxl-facebook-circle' id="blue"></i></a>
+                <a href="#"><i class='bx bxl-whatsapp-square' id="green"></i></a>
+                <a href="#"><i class='bx bxl-twitter' id="lblue"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-list-extra">
+            <div>
+                <a href="#"><span class="material-symbols-outlined">
+                        location_on
+                    </span> address</a>
+                <a href="#"><span class="material-symbols-outlined">
+                        smartphone
+                    </span> +91 90xxxxxxxx</a>
+
+            </div>
+        </div>
+    </div>
+
+     <script >
+ // Wait for the DOM to load
+ document.addEventListener('DOMContentLoaded', function () {
+            // Get elements
+            const overlay = document.getElementById('overlay');
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const mainContent = document.getElementById('main-content');
+            const userInfoForm = document.getElementById('user-info-form');
+
+            const showSignupBtn = document.getElementById('show-signup');
+            const showLoginBtn = document.getElementById('show-login');
+            const loginBtn = document.getElementById('login-btn');
+            const signupBtn = document.getElementById('signup-btn');
+            const logoutBtn = document.getElementById('logout-btn');
+            const editProfileBtn = document.getElementById('edit-profile-btn');
+            const closeInfoBtn = document.getElementById('close-info-btn');
+
+            const infoForm = document.getElementById('info-form');
+            const profilePhotoInput = document.getElementById('profile-photo');
+            const profilePhotoPreview = document.getElementById('profile-photo-preview');
+
+ 
+
+            // Function to show Sign-up form
+            function showSignUp() {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            }
+
+            // Function to show Login form
+            function showLogin() {
+                signupForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+
+            // Sign-up logic - Save data to localStorage
+            function signUp() {
+                const username = document.getElementById('signup-username').value.trim();
+                const password = document.getElementById('signup-password').value;
+
+                if (username === '' || password === '') {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                if (localStorage.getItem(`user_${username}`)) {
+                    alert("Username already exists. Please choose a different one.");
+                    return;
+                }
+
+                // Store user data as JSON string
+                const userData = {
+                    username: username,
+                    password: password, // Note: Insecure! Do not store plain passwords in production
+                    profile: null // Placeholder for profile data
+                };
+                localStorage.setItem(`user_${username}`, JSON.stringify(userData));
+                alert("Sign-up successful! You can now log in.");
+                showLogin(); // Switch to login form
+            }
+
+            // Login logic - Check data from localStorage
+            function login() {
+                const username = document.getElementById('login-username').value.trim();
+                const password = document.getElementById('login-password').value;
+
+                if (username === '' || password === '') {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                const userDataString = localStorage.getItem(`user_${username}`);
+                if (userDataString) {
+                    const userData = JSON.parse(userDataString);
+                    if (userData.password === password) {
+                        alert("Login successful!");
+                        // Set login state in localStorage
+                        localStorage.setItem('isLoggedIn', 'true');
+                        localStorage.setItem('currentUser', username);
+                        // Redirect to dashboard.html
+                        // window.location.href = 'manu.html';
+                        overlay.style.display = 'none';
+                        mainContent.style.display = 'block';
+                    } else {
+                        alert("Invalid password.");
+                    }
+                } else {
+                    alert("User does not exist.");
+                }
+            } 
+           
+
+            // Event Listeners
+            showSignupBtn.addEventListener('click', showSignUp);
+            showLoginBtn.addEventListener('click', showLogin);
+            signupBtn.addEventListener('click', signUp);
+            loginBtn.addEventListener('click', login);
+
+           // Initialize the login state
+            function checkLogin() {
+                const isLoggedIn = localStorage.getItem('isLoggedIn');
+                const currentUser = localStorage.getItem('currentUser');
+                if (isLoggedIn === 'true' && currentUser) {
+                    // User is logged in, redirect to dashboard
+                    // window.location.href = 'manu.html';
+                    overlay.style.display = 'none';
+                    mainContent.style.display = 'block';
+                } else {
+                    // User is not logged in, show overlay
+                    overlay.style.display = 'flex';
+                }
+            }
+            checkLogin();
+        });
+     </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- --------------------javascript-------------------- -->
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownManue = document.querySelector('.dropdown_manue')
+
+        toggleBtn.onclick = function () {
+            dropDownManue.classList.toggle('open')
+            const isOpen = dropDownManue.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <script>
+
+
+        // Function to toggle the review form visibility
+        document.getElementById('openReviewForm').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default link behavior
+            const reviewFormContainer = document.getElementById('reviewFormContainer');
+
+            // Check if the review form is currently displayed
+            if (reviewFormContainer.style.display === 'block') {
+                // If it is displayed, hide it
+                reviewFormContainer.style.display = 'none';
+            } else {
+                // If it is hidden, show it
+                reviewFormContainer.style.display = 'block';
+            }
+        });
+
+        // Function to load reviews from localStorage and display them in the carousel
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            const carouselInner = document.querySelector('.carousel-inner');
+
+            // Clear existing reviews in the carousel
+            carouselInner.innerHTML = '';
+
+            // Create and append each review item to the carousel
+            reviews.forEach((review, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
+
+                carouselItem.innerHTML = `
+            <span class="material-symbols-outlined">
+                sentiment_very_satisfied
+            </span>
+            <div class="layer">
+                <h2>${review.name}</h2>
+                <p>${review.text}</p>
+            </div>
+        `;
+                carouselInner.appendChild(carouselItem);
+            });
+        }
+
+        // Function to handle form submission
+        document.getElementById('reviewForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting normally
+
+            // Get review details from form inputs
+            const reviewerName = document.getElementById('reviewerName').value;
+            const reviewText = document.getElementById('reviewText').value;
+
+            // Create a review object
+            const newReview = {
+                name: reviewerName,
+                text: reviewText
+            };
+
+            // Get existing reviews from localStorage, or initialize an empty array if none exist
+            const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+
+            // Add the new review to the array
+            reviews.push(newReview);
+
+            // Save the updated reviews array back to localStorage
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+
+            // Reload the reviews in the carousel
+            loadReviews();
+
+            // Clear the form inputs
+            document.getElementById('reviewForm').reset();
+
+            // Hide the form after submission
+            document.getElementById('reviewFormContainer').style.display = 'none';
+        });
+
+        // Load reviews when the page is loaded
+        document.addEventListener('DOMContentLoaded', loadReviews);
+
+    </script>
+   
+
+    <!-- -----------------------------localstorage---------------------------------- -->
+    <script src="menu_cart_interaction.js"></script>
+
+
+</body>
+
+</html>
